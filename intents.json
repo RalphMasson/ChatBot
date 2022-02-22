@@ -1,0 +1,88 @@
+{"intents": [
+	{"tag": "greeting",
+	 "patterns": ["Bonjour","Salut","Hey"],
+	 "responses": ["Coucou Ralph","Bien le bonjour monsieur Ralph"],
+	 "context_set": ""
+	},
+	{"tag": "goodbye",
+	 "patterns": ["A bientot","Au revoir","Passe une bonne journee"],
+	 "responses": ["Bye bye","A plus tard"],
+	 "context_set": ""
+	},
+	{"tag": "age",
+	 "patterns": ["Quel age as tu","Quel est ton age","age","C'est quoi ton age"],
+	 "responses": ["23","J'ai 23 ans"],
+	 "context_set": ""
+	},
+	{"tag": "state",
+	 "patterns": ["Comment vas-tu ?","ça va ?","tu vas bien ?","comment tu te sens ?"],
+	 "responses": ["Je vais bien merci et toi ?","Très bien merci, et toi comment ça va ?"],
+	 "context_set": "howareyou"		
+	},
+	{"tag": "fine",
+	 "patterns": ["je vais bien","ça va","très bien","en pleine forme"],
+	 "responses": ["Ah super je suis content pour toi"],
+	 "context_filter": "howareyou"		
+	},
+	{"tag": "bad",
+	 "patterns": ["je ne vais pas bien","pas très bien", "je suis triste"],
+	 "responses": ["Oh pourquoi raconte moi"],
+	 "context_filter": "howareyou"		
+	},
+	{"tag": "name",
+	 "patterns": ["Comment t'appelles tu","prénom","C'est quoi ton prénom","C'est quoi ton blaze","Qui es tu ?"],
+	 "responses": ["Je m'appelle Jarvis et je suis une intelligence artificielle à ton service"],
+	 "context_set": ""
+	},
+	{"tag": "address",
+	 "patterns": ["Où habites tu","adresse","Quelle est ton adresse","C'est quoi ton adresse"],
+	 "responses": ["J'habite à Deauville","Deauville, France"],
+	 "context_set": ""
+	},
+	{"tag": "price",
+	 "patterns": ["Combien coute une baguette","prix d'une baguette"],
+	 "responses": ["ça coute 1 euro","une baguette coute 1 euro"],
+	 "context_set": ""
+	},
+	{"tag": "meteo",
+	 "patterns": ["Quelle est la météo?","Quel temps fait-il ?","Va-t-il pleuvoir ?","Est ce qu'il fait beau ?", "Y'aura t-il du soleil ?"],
+	 "responses": [" "],
+	 "context_set":""
+	},
+	{"tag": "whatsapp",
+	 "patterns": ["Ouvre WhatsApp","WhatsApp"],
+	 "responses": ["Oui tout de suite"],
+	 "context_set":""
+	},
+	{"tag": "chrome",
+	 "patterns": ["Ouvre Google Chrome","Ouvre Chrome"],
+	 "responses": ["Oui tout de suite"],
+	 "context_set":""
+	},
+	{"tag": "mail",
+	 "patterns": ["Ouvre Gmail","Ouvre mes mails"],
+	 "responses": ["Oui tout de suite"],
+	 "context_set":""
+	},
+	{"tag": "facebook",
+	 "patterns": ["Ouvre Facebook"],
+	 "responses": ["Oui tout de suite"],
+	 "context_set":""
+	},
+	{"tag": "images",
+	 "patterns": ["Cherche des images de","Montre moi des images de","Affiche des photos de","Cherche des photos de","Montre moi des photos de"],
+	 "responses": ["Voilà les images"],
+	 "context_set":""
+	},
+	{"tag": "videos",
+	 "patterns": ["Cherche des vidéos de","Montre moi des vidéos de"],
+	 "responses": ["Voilà les vidéos"],
+	 "context_set":""
+	},
+	{"tag": "google",
+	 "patterns": ["Cherche sur Google"],
+	 "responses": ["Oui tout de suite"],
+	 "context_set":""
+	}	
+	]
+}
